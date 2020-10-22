@@ -35,18 +35,20 @@ header::after {
 
 nav {
     float: right;
+    height: 6vh;
+    padding: 2vh 0;
 }
 
 nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    padding: 1.5vh 0;
 }
 
 nav li {
     display: inline-block;
     margin-left: 70px;
-    padding-top: 35px;
 
     position: relative;
 }
@@ -103,6 +105,8 @@ nav a:hover::before {
     nav {
         display: flex;
         justify-content: space-around;
+        height: 0vh;
+        padding: 3.25vh 0;
     }
 
     nav ul {
@@ -141,7 +145,7 @@ nav a:hover::before {
     }
 
     .burger {
-        margin-top: 3vh;
+        height: 3.5vh;
     }
 
     .burger div {
