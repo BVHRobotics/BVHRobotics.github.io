@@ -36,15 +36,15 @@ nav ul {
     list-style: none;
 }
 
-nav li{
+nav li {
     display: inline-block;
     margin-left: 70px;
     padding-top: 35px;
-    
+
     position: relative;
 }
 
-nav a{
+nav a {
     color: #1f1f1f;
     text-decoration: none;
     text-transform: uppercase;
@@ -61,14 +61,76 @@ nav a::before {
     display: block;
     background: #0a38cf;
     width: 100%;
-    
+
     position: absolute;
     top: 0;
     height: 0%;
-    
+
     transition: all ease-in-out 230ms;
 }
 
 nav a:hover::before {
     height: 5px;
+}
+
+/*Mobile Nav*/
+
+.burger div {
+    display: none;
+    width: 25px;
+    height: 3px;
+    background-color: #1f1f1f;
+    margin: 5px;
+}
+
+@media screen and (max-width: 850px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        height: 10vh;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul {
+        position: absolute;
+        justify-content: space-around;
+        right: 0px;
+        height: 88vh;
+        top: 10vh;
+        background-color: #1f1f1f;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        
+    }
+
+    nav a {
+        color: white;
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+
+    nav a:hover::before {
+        height: 0px;
+    }
+
+    nav li {
+        opacity: 0;
+    }
+
+    .burger {
+        margin-top: 3vh;
+    }
+
+    .burger div {
+        display: block;
+    }
 }
