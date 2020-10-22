@@ -1,8 +1,13 @@
+* {
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
     background: #1f1f1f;
     font-family: 'Karla', sans-serif;
     font-weight: 400;
+    overflow-x: hidden;
 }
 
 .container {
@@ -99,6 +104,7 @@ nav a:hover::before {
     }
 
     nav ul {
+        overflow-x: hidden;
         position: absolute;
         justify-content: space-around;
         right: 0px;
@@ -128,6 +134,7 @@ nav a:hover::before {
     }
 
     nav li {
+        margin-left: 0;
         opacity: 0;
     }
 
@@ -144,7 +151,7 @@ nav a:hover::before {
     transform: translateX(0%);
 }
 
-@keyframes navLinkFade{
+@keyframes navLinkFade {
     from {
         opacity: 0;
         transform: translateX(50px);
@@ -152,11 +159,11 @@ nav a:hover::before {
 
     to {
         opacity: 1;
-        transform: translateX(0px;)
+        transform: translateX(0px; )
     }
 }
 
-@keyframes navLinkUnFade{
+@keyframes navLinkUnFade {
     from {
         opacity: 1;
         transform: translateX(0px);
@@ -164,7 +171,7 @@ nav a:hover::before {
 
     to {
         opacity: 0;
-        transform: translateX(50px;)
+        transform: translateX(50px; )
     }
 }
 
