@@ -1,5 +1,5 @@
 * {
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 body {
@@ -7,7 +7,7 @@ body {
     background: #1f1f1f;
     font-family: 'Karla', sans-serif;
     font-weight: 400;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 .container {
