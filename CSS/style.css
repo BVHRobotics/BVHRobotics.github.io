@@ -10,13 +10,11 @@ body {
     overflow-x: clip;
 }
 
-/*
 .container {
     width: 90%;
     margin: 0 auto;
     font-family: 'Rubik', sans-serif;
 }
-*/
 
 header {
     background: #fff;
