@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    background: pink;
+    background: white;
     font-family: 'Karla', sans-serif;
     font-weight: 400;
     overflow-x: clip;
@@ -148,6 +148,7 @@ nav a:hover::before {
 
 .body-active{
     overflow: hidden;
+    width: 100vw;
 }
 
 @keyframes navLinkFade {
