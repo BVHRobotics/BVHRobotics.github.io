@@ -1,3 +1,7 @@
+header{
+    background: rgba(1, 1, 1, 0.03)
+}
+
 canvas {
     position: absolute;
     top: 0;
