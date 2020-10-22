@@ -18,6 +18,7 @@ body {
 
 header {
     background: #fff;
+    height: 10vh;
 }
 
 header::after {
@@ -27,8 +28,9 @@ header::after {
 }
 
 .logo {
+    height: 8vh;
     float: left;
-    padding: 10px 0;
+    padding: 1vh 0;
 }
 
 nav {
