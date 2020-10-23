@@ -100,6 +100,14 @@ h1 {
 }
 
 @media screen and (max-width: 850px) {
+    #home {
+        height: 80vh;
+    }
+
+    .infoPg {
+        height: 90vh;
+    }
+
     .arrows {
         margin-left: 4vw;
     }
