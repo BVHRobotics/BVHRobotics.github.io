@@ -7,18 +7,20 @@ body {
     background: white;
     font-family: 'Karla', sans-serif;
     font-weight: 400;
-    overflow-x: clip;
+    overflow-x: hidden;
 }
 
 .container {
     width: 90%;
     margin: 0 auto;
     font-family: 'Rubik', sans-serif;
+    z-index: 1;
 }
 
 header {
     background: #fff;
     height: 10vh;
+    background: rgba(1, 1, 1, 0.03);
 }
 
 header::after {
