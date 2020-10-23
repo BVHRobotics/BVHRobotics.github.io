@@ -3,8 +3,83 @@ header{
 }
 
 canvas {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+.box
+{
+    position: absolute;
+    bottom: 10px;
+    margin-left: 45%;
+    transform: translate(-50%, -50%);
+}
+.box span
+{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.box span:nth-child(2)
+{
+    animation-delay: -0.2s;
+    
+}
+.box span:nth-child(3)
+{
+    animation-delay: -0.4s;
+}
+@keyframes animate
+{
+    0%
+    {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+}
+
+.information
+{
+    width: 90%;
+    position: absolute;
+    padding-top: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+#about h1
+{
+    text-align: center;
+    padding-bottom: 100%;
+}
+#projects h1
+{
+    text-align: center;
+    padding-bottom: 100%;
+}
+#contact h1
+{
+    text-align: center;
+    padding-bottom: 100%;
 }
