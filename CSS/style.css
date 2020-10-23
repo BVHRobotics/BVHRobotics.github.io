@@ -1,10 +1,17 @@
-* {
-    overflow-x: clip;
+html {
+    scroll-behavior: smooth;
+}
+
+input,
+textarea,
+select,
+a {
+    outline: none;
 }
 
 body {
     margin: 0;
-    background: #1f1f1f;
+    background: white;
     font-family: 'Karla', sans-serif;
     font-weight: 400;
     overflow-x: hidden;
@@ -14,13 +21,13 @@ body {
     width: 90%;
     margin: 0 auto;
     font-family: 'Rubik', sans-serif;
-    z-index: 1;
 }
 
 header {
     background: #fff;
     height: 10vh;
     background: rgba(1, 1, 1, 0.03);
+    z-index: 5;
 }
 
 header::after {
@@ -96,48 +103,60 @@ nav a:hover::before {
     body {
         overflow-x: hidden;
     }
+
     header {
         height: 10vh;
     }
+
     nav {
+        z-index: 6;
         display: flex;
         justify-content: space-around;
         height: 0vh;
         padding: 3.25vh 0;
     }
+
     nav ul {
+        z-index: 7;
         overflow-x: hidden;
         position: absolute;
         justify-content: space-around;
         right: 0px;
-        height: 90vh;
+        height: 87vh;
         top: 10vh;
         background-color: #0a38cf;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 0%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
+        opacity: 0;
+        transition: opacity 0.21s ease-in;
     }
+
     nav a {
+        z-index: 8;
         color: white;
         font-size: 16px;
         letter-spacing: 3px;
     }
+
     nav a:hover {
         color: #1f1f1f;
     }
+
     nav a:hover::before {
         height: 0px;
     }
+
     nav li {
         margin-left: 0;
         opacity: 0;
     }
+
     .burger {
         height: 3.5vh;
     }
+
     .burger div {
         display: block;
     }
@@ -145,30 +164,26 @@ nav a:hover::before {
 
 .nav-active {
     width: 100%;
-    transform: translateX(0%);
+    opacity: 0.95;
 }
+
+.bod-active {
+    overflow: hidden;
+}
+
 
 @keyframes navLinkFade {
     from {
         opacity: 0;
         transform: translateX(50px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0px)
     }
 }
 
-@keyframes navLinkUnFade {
-    from {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-    to {
-        opacity: 0;
-        transform: translateX(50px)
-    }
-}
 
 .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
