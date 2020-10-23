@@ -14,7 +14,7 @@ function init() {
     renderer.setClearColor(0xffffff, 1);
 
     starGeo = new THREE.Geometry();
-    for (let i = 0; i < 9000; i++) {
+    for (let i = 0; i < 5000; i++) {
         star = new THREE.Vector3(
             Math.random() * 600 - 300,
             Math.random() * 600 - 300,
@@ -28,7 +28,7 @@ function init() {
     let sprite = new THREE.TextureLoader().load('i/star.png');
     let starMaterial = new THREE.PointsMaterial({
         color: "#"+((1<<24)*Math.random()|0).toString(16),
-        size: 0.3,
+        size: 0.7,
         map: sprite
     });
 
