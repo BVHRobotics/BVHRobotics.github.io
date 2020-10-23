@@ -22,8 +22,10 @@ const navSlide = () => {
         burger.classList.toggle('toggle');
     });
 
-    nav.addEventListener('click', () => {
-        if (window.screen.height <  850) {
+    if (window.screen.height < 850) {
+
+        nav.addEventListener('click', () => {
+
             nav.classList.toggle('nav-active');
             bdy.classList.toggle('bod-active');
 
@@ -37,9 +39,10 @@ const navSlide = () => {
             });
             //Buger Animation
             burger.classList.toggle('toggle');
-        }
 
-    });
+
+        });
+    }
 
 }
 
