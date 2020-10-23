@@ -27,7 +27,7 @@ function init() {
 
     let sprite = new THREE.TextureLoader().load('i/star.png');
     let starMaterial = new THREE.PointsMaterial({
-        color: "#"+((1<<24)*Math.random()|0).toString(16),
+        color: "#0a38cf",
         size: 0.7,
         map: sprite
     });
@@ -50,7 +50,7 @@ function animate() {
     starGeo.vertices.forEach(p => {
         p.velocity += p.acceleration
         p.y -= p.velocity;
-        
+
         if (p.y < -200) {
             p.y = 200;
             p.velocity = 0;
