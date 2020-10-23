@@ -18,9 +18,8 @@ body
 .box
 {
     position: absolute;
+    margin-left: 50%;
     bottom: 10px;
-    margin-left: 45%;
-    transform: translate(-50%, -50%);
 }
 .box span
 {
@@ -62,25 +61,38 @@ body
 
 .information
 {
-    padding-top: 100%;
-    width: 95%;
+    margin-left: -5%;
+    width: 100%;
     position: absolute;
     height: 100vh;
     scroll-behavior: smooth;
     overflow-y: scroll;
 }
-#about h1
+h1
 {
     text-align: center;
-    padding-bottom: 100%;
+    color: #0a38cf;
 }
-#projects h1
+#home h1
 {
-    text-align: center;
-    padding-bottom: 100%;
+    margin-top: 50vh;
 }
-#contact h1
+#home
 {
+    height: 60%;
+    width: 100%;
     text-align: center;
-    padding-bottom: 100%;
+}
+#about
+{
+    padding: 10vh;
+    height: 90vh;
+}
+#projects
+{
+    height: 90vh;
+}
+#contact
+{
+    height: 90vh;
 }
