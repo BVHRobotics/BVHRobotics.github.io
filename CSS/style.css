@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     background: white;
@@ -92,9 +96,11 @@ nav a:hover::before {
     body {
         overflow-x: hidden;
     }
+
     header {
         height: 10vh;
     }
+
     nav {
         z-index: 6;
         display: flex;
@@ -102,6 +108,7 @@ nav a:hover::before {
         height: 0vh;
         padding: 3.25vh 0;
     }
+
     nav ul {
         z-index: 7;
         overflow-x: hidden;
@@ -118,25 +125,31 @@ nav a:hover::before {
         opacity: 0;
         transition: opacity 0.21s ease-in;
     }
+
     nav a {
         z-index: 8;
         color: white;
         font-size: 16px;
         letter-spacing: 3px;
     }
+
     nav a:hover {
         color: #1f1f1f;
     }
+
     nav a:hover::before {
         height: 0px;
     }
+
     nav li {
         margin-left: 0;
         opacity: 0;
     }
+
     .burger {
         height: 3.5vh;
     }
+
     .burger div {
         display: block;
     }
@@ -157,6 +170,7 @@ nav a:hover::before {
         opacity: 0;
         transform: translateX(50px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0px)
