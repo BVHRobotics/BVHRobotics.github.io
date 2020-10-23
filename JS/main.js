@@ -23,20 +23,21 @@ const navSlide = () => {
     });
 
     nav.addEventListener('click', () => {
+        if (window.screen.height <  850) {
+            nav.classList.toggle('nav-active');
+            bdy.classList.toggle('bod-active');
 
-        nav.classList.toggle('nav-active');
-        bdy.classList.toggle('bod-active');
-
-        //Animation
-        navLink.forEach((link, index) => {
-            if (link.style.animation) {
-                link.style.animation = ''
-            } else {
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + .3}s`
-            }
-        });
-        //Buger Animation
-        burger.classList.toggle('toggle');
+            //Animation
+            navLink.forEach((link, index) => {
+                if (link.style.animation) {
+                    link.style.animation = ''
+                } else {
+                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + .3}s`
+                }
+            });
+            //Buger Animation
+            burger.classList.toggle('toggle');
+        }
 
     });
 
