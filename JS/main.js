@@ -22,7 +22,7 @@ const navSlide = () => {
         burger.classList.toggle('toggle');
     });
 
-    if (window.screen.height < 850) {
+    if (window.screen.height < 851) {
 
         nav.addEventListener('click', () => {
 
