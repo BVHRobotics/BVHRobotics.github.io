@@ -32,9 +32,12 @@ canvas {
 
 .arrows {
     margin-left: 5vw;
+    z-index: 0;
+    overflow: visible;
 }
 
 .arrows div {
+    overflow: visible;
     display: block;
     width: 30px;
     height: 30px;
