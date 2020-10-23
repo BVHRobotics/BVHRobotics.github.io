@@ -108,15 +108,15 @@ nav a:hover::before {
         position: absolute;
         justify-content: space-around;
         right: 0px;
-        height: 90vh;
+        height: 85vh;
         top: 10vh;
         background-color: #0a38cf;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 0%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
+        opacity: 0;
+        transition: opacity 0.21s ease-in;
     }
     nav a {
         color: white;
@@ -143,14 +143,9 @@ nav a:hover::before {
 
 .nav-active {
     width: 100%;
-    transform: translateX(0%);
+    opacity: 0.95;
 }
 
-.body-active{
-    overflow: hidden;
-    width: 100vw;
-    background: pink;
-}
 
 @keyframes navLinkFade {
     from {
@@ -163,16 +158,6 @@ nav a:hover::before {
     }
 }
 
-@keyframes navLinkUnFade {
-    from {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-    to {
-        opacity: 0;
-        transform: translateX(50px)
-    }
-}
 
 .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
