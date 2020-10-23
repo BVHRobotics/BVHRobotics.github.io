@@ -140,10 +140,6 @@ nav a:hover::before {
         height: 10vh;
     }
 
-    #myBtn {
-        bottom: 100px;
-    }
-
     nav {
         z-index: 6;
         display: flex;
