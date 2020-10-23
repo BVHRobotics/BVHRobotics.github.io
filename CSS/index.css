@@ -62,11 +62,12 @@ body
 
 .information
 {
-    width: 90%;
-    position: absolute;
     padding-top: 100%;
-    height: 100%;
+    width: 95%;
+    position: absolute;
+    height: 100vh;
     scroll-behavior: smooth;
+    overflow-y: scroll;
 }
 #about h1
 {
