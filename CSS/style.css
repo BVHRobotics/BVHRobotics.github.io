@@ -28,6 +28,8 @@ body {
 
 ::-webkit-scrollbar {
     width: 0;
+    color: transparent;
+    background: transparent;
 }
 
 #scrollPath {
