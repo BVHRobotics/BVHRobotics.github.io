@@ -48,6 +48,7 @@ const navSlide = () => {
 }
 
 //Night more
+//FIX IT FOR FIREFOX & HEADER COLOR
 const nightMode = () => {
     const entirePage = document.querySelector('html');
 
