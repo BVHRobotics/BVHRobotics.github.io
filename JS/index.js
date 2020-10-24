@@ -18,4 +18,30 @@ const nightMode = () => {
     }
 }
 
+
+//Scrolling
+mybutton = document.getElementById("myBtn");
+let progress = document.getElementById("progressBar");
+let totalHeight = document.body.scrollHeight;
+
+window.onscroll = function () {
+    let progressHeight = (window.pageYOffset / totalHeight) * 100;
+    progress.style.height = progressHeight + "%";
+    scrollFunction()
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+
 nightMode();

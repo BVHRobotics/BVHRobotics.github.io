@@ -1,10 +1,17 @@
 html {
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 body {
     background: white;
     margin: 0;
+    padding: 0;
+    border: 0;
+/*  \/ If theres scrolling problems or height problems delete 'height'*/
+    height: 400vh;
     font-family: 'Karla', sans-serif;
     font-weight: 400;
     overflow-x: hidden;
@@ -17,6 +24,27 @@ body {
 
 .pg-uninvert {
     filter: invert(0%);
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#scrollPath {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+#progressBar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 8px;
+    background: linear-gradient(to top, #008aff, #00ffe7);
 }
 
 .container {

@@ -132,6 +132,10 @@ canvas {
 
 /*Mobile*/
 @media screen and (max-width: 850px) {
+    body {
+        height: 380vh;
+    }
+
     .infoPg {
         height: 90vh;
     }
