@@ -1,5 +1,7 @@
 html {
     scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     margin: 0;
     padding: 0;
     border: 0;
@@ -27,6 +29,7 @@ body {
 }
 
 ::-webkit-scrollbar {
+    display: none;
     width: 0;
     color: transparent;
     background: transparent;
@@ -47,6 +50,7 @@ body {
     right: 0;
     width: 8px;
     background: linear-gradient(to top, #008aff, #00ffe7);
+    z-index: 99;
 }
 
 .container {
