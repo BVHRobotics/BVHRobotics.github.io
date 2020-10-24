@@ -1,3 +1,4 @@
+//Mobile Nav
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
@@ -46,27 +47,40 @@ const navSlide = () => {
 
 }
 
-navSlide();
+//Night more
+const nightMode = () => {
+    const entirePage = document.querySelector('html');
 
+    var date = new Date();
+    var current_hour = date.getHours();
 
-//Get the button:
-mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
+    if ((current_hour > 6) && (current_hour < 19)) {
+        entirePage.classList.toggle('pg-invert');
+    } else {
+        entirePage.classList.toggle('pg-uninvert');
+    }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+//Up Button
+mybutton = document.getElementById("myBtn");
+
+window.onscroll = function () {
+    scrollFunction()
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-} 
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 
-
+//Functions
+navSlide();
+nightMode();
