@@ -101,6 +101,7 @@ canvas {
 
 .instaLink {
     position: absolute;
+    text-decoration: none;
     right: 5vw;
     bottom: 50px;
     font-size: 20px;
