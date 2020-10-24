@@ -2,14 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.pg-invert{
-    filter: invert(100%);
-}
-
-.pg-uninvert{
-    filter: invert(0%);
-}
-
 input,
 textarea,
 select,
@@ -19,10 +11,19 @@ a {
 
 body {
     margin: 0;
-    background: white;
     font-family: 'Karla', sans-serif;
     font-weight: 400;
     overflow-x: hidden;
+}
+
+.pg-invert {
+    background: black;
+    filter: invert(100%);
+}
+
+.pg-uninvert {
+    background: white;
+    filter: invert(0%);
 }
 
 .container {

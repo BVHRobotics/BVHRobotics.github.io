@@ -49,7 +49,7 @@ const navSlide = () => {
 
 //Night more
 const nightMode = () => {
-    const entirePage = document.querySelector('html');
+    const entirePage = document.querySelector('body');
 
     var date = new Date();
     var current_hour = date.getHours();
