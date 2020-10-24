@@ -54,7 +54,7 @@ const nightMode = () => {
     var date = new Date();
     var current_hour = date.getHours();
 
-    if ((current_hour >= 6) && (current_hour <= 19)) {
+    if ((current_hour >= 6) && (current_hour < 19)) {
         entirePage.classList.toggle('pg-uninvert');
     } else {
         entirePage.classList.toggle('pg-invert');
