@@ -47,20 +47,6 @@ const navSlide = () => {
 
 }
 
-//Night more
-//FIX IT FOR FIREFOX & HEADER COLOR
-const nightMode = () => {
-    const entirePage = document.querySelector('html');
-
-    var date = new Date();
-    var current_hour = date.getHours();
-
-    if ((current_hour >= 6) && (current_hour < 19)) {
-        entirePage.classList.toggle('pg-uninvert');
-    } else {
-        entirePage.classList.toggle('pg-invert');
-    }
-}
 
 //Up Button
 mybutton = document.getElementById("myBtn");
@@ -84,4 +70,4 @@ function topFunction() {
 
 //Functions
 navSlide();
-nightMode();
+
