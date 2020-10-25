@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 
+<!--TODO: Make Button that scrolls back up-->
+
 <body>
     <header>
         <div class="container">
@@ -36,50 +38,67 @@
         </div>
     </header>
 
-    <div id="home" class="infoPg">
-        <h1>Welcome To BVH Robotics</h1>
-        <div class="downScroll">
-            <div class="arrows">
-                <div class="arrow1"></div>
-                <div class="arrow2"></div>
+    <div id="scrollPath"></div>
+    <div id="progressBar"></div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">˄</button>
+    
+    <div>
+        <div id="home" class="infoPg">
+            <h2>We Are</h2>
+            <img src='i/roboticsLogoTxt.png'>
+            <h1>Baron <span>Bots</span></h1>
+            <h3>Bonita Vista High School’s<br>Robotics Club</h3>
+            <a class='instaLink' href="https://www.instagram.com/751bots/?hl=en">
+                <p>Instagram</p>
+            </a>
+            <div class="downScroll">
+                <div class="arrows">
+                    <div class="arrow1"></div>
+                    <div class="arrow2"></div>
+                </div>
+                <a href="#about" class="scrollClk"></a>
             </div>
-            <a href="#about" class="scrollClk"></a>
         </div>
-    </div>
-    <div id="about" class="infoPg">
-        <div class="downScroll">
-            <div class="arrows">
-                <div class="arrow1"></div>
-                <div class="arrow2"></div>
-            </div>
-            <a href="#projects" class="scrollClk"></a>
-        </div>
-    </div>
-    <div id="projects" class="infoPg">
-        <div class="downScroll">
-            <div class="arrows">
-                <div class="arrow1"></div>
-                <div class="arrow2"></div>
-            </div>
-            <a href="#contact" class="scrollClk"></a>
-        </div>
-    </div>
-    <div id="contact" class="infoPg">
-        <div class="downScroll">
-            <div class="arrows">
-                <div class="arrow1"></div>
-                <div class="arrow2"></div>
-            </div>
-            <a href="#donate" class="scrollClk"></a>
-        </div>
-    </div>
-    <div id="donate" class="infoPg">
 
+        <div id="about" class="infoPg">
+            <div class="downScroll">
+                <div class="arrows">
+                    <div class="arrow1"></div>
+                    <div class="arrow2"></div>
+                </div>
+                <a href="#projects" class="scrollClk"></a>
+            </div>
+        </div>
+
+        <div id="projects" class="infoPg">
+            <div class="downScroll">
+                <div class="arrows">
+                    <div class="arrow1"></div>
+                    <div class="arrow2"></div>
+                </div>
+                <a href="#contact" class="scrollClk"></a>
+            </div>
+        </div>
+
+        <div id="contact" class="infoPg">
+            <div class="downScroll">
+                <div class="arrows">
+                    <div class="arrow1"></div>
+                    <div class="arrow2"></div>
+                </div>
+                <a href="#donate" class="scrollClk"></a>
+            </div>
+        </div>
+        <div id="donate" class="infoPg">
+        </div>
     </div>
 
 
     <script src="JS/main.js"></script>
     <script src="JS/three.min.js"></script>
+    <script src="JS/detect.min.js"></script>
+    <script src="JS/index.js"></script>
     <script src="JS/background.js"></script>
+
 
 </body></html>

@@ -3,6 +3,7 @@ canvas {
     top: 0;
     left: 0;
     z-index: -1;
+    opacity: 0.6;
 }
 
 .infoPg {
@@ -32,9 +33,12 @@ canvas {
 
 .arrows {
     margin-left: 5vw;
+    z-index: 0;
+    overflow: visible;
 }
 
 .arrows div {
+    overflow: visible;
     display: block;
     width: 30px;
     height: 30px;
@@ -65,19 +69,48 @@ canvas {
 }
 
 
-h1 {
-    text-align: center;
-    color: #0a38cf;
+/*Pages*/
+#home {
+    height: 90vh;
 }
 
 #home h1 {
-    margin-top: 40vh;
+    color: black;
+    text-align: center;
+    font-size: 60px;
 }
 
+#home h1 span {
+    color: #0a38cf;
+}
 
+#home h2 {
+    font-size: 30px;
+    margin-top: 10vh;
+    color: black;
+    text-align: center
+}
 
-#home {
-    height: 90vh;
+#home h3 {
+    position: absolute;
+    left: 5vw;
+    bottom: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+.instaLink {
+    position: absolute;
+    text-decoration: none;
+    right: 5vw;
+    bottom: 50px;
+    font-size: 20px;
+    color: #0a38cf;
+}
+
+#home img {
+    width: 275px;
+    margin: 5vh calc((100vw - 275px)/2);
 }
 
 #about {
@@ -96,7 +129,54 @@ h1 {
     top: 400vh;
 }
 
+
+/*Mobile*/
 @media screen and (max-width: 850px) {
+    body {
+        height: 380vh;
+    }
+
+    .infoPg {
+        height: 90vh;
+    }
+
+    #home {
+        height: 80vh;
+    }
+
+    #home h1 {
+        margin: 0;
+        font-size: 50px;
+    }
+
+
+    #home h2 {
+        margin-top: 5vh;
+    }
+
+    #home h3 {
+        position: relative;
+        text-align: center;
+        font-size: 18px;
+        left: 0;
+        bottom: 0;
+        margin-top: 6%;
+    }
+
+    .instaLink {
+        position: relative;
+        text-align: center;
+        right: 0;
+    }
+
+    .instaLink p {
+        margin-top: 80px;
+    }
+
+    #home img {
+        margin: 2% calc((100vw - 275px)/2);
+    }
+
     .arrows {
         margin-left: 4vw;
     }
