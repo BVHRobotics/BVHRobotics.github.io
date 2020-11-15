@@ -11,6 +11,7 @@ canvas {
     font-family: 'Karla', sans-serif;
     height: 100vh;
     width: 100vw;
+    text-align: center;
 }
 
 .downScroll {
@@ -115,18 +116,22 @@ canvas {
 
 #about {
     top: 100vh;
+    display: flex;
 }
 
 #projects {
     top: 200vh;
+    display: flex;
 }
 
 #contact {
     top: 300vh;
+    display: flex;
 }
 
 #donate {
     top: 400vh;
+    display: flex;
 }
 
 
@@ -180,4 +185,15 @@ canvas {
     .arrows {
         margin-left: 4vw;
     }
+}
+
+.info-content
+{
+    height: 40vh;
+    width: 70vh;
+    border-radius: 10px;
+    margin: auto;
+    background: black;
+    box-shadow: 0px 0px 10px 2px black;
+    border: 1px solid white;
 }
