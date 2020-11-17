@@ -156,21 +156,39 @@ canvas {
 .ct1 {
     position: absolute;
     width: 50%;
-    top: 16vh;
+    top: 13vh;
     right: 25%;
     left: 25%;
     text-align: center;
 }
 
 .inputBox {
+    font-family: 'Karla', sans-serif;
     margin-bottom: 15px;
     width: 80%;
     height: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0);
 }
 
 .inputBox2 {
-    width: 90%;
-    height: 100px;
+    font-family: 'Karla', sans-serif;
+    width: 95%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.submit {
+    font-family: 'Karla', sans-serif;
+    font-size: 100%;
+    background: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    color: #0a38cf;
+}
+
+.submit:hover {
+    color: gray;
 }
 
 /*Mobile*/
