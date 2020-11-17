@@ -17,8 +17,6 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
-<!--TODO: Make Button that scrolls back up-->
-
 <body>
     <header>
         <div class="container">
@@ -86,7 +84,21 @@
         </div>
 
         <div id="contact" class="infoPg">
-            <div class="info-content" data-aos="fade-up" data-aos-duration="2000">
+            <h1>Contact Us</h1>
+            <div class="ct1">
+                <form name="contact" netlify>
+                    Name<br>
+                    <input type="text" name="firstname" class="inputBox"><br><br>
+                    Email<br>
+                    <input type="text" name="email" class="inputBox">
+                    <br><br>
+                    Subject<br>
+                    <input type="text" name="subject" class="inputBox"><br><br>
+                    Message<br>
+                    <textarea type="text" name="message" class="inputBox2"></textarea>
+                    <br><br>
+                    <input type="submit" value="Submit" class=submit>
+                </form>
             </div>
             <div class="downScroll">
                 <div class="arrows">
@@ -111,6 +123,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+
     </script>
 
 
