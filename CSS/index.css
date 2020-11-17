@@ -167,16 +167,16 @@ canvas {
     margin-bottom: 15px;
     width: 80%;
     height: 30px;
-    background: rgba(0, 0, 0, 0.5);
-    border-color: rgba(0, 0, 0, 0);
+    background: rgba(20, 20, 20, 0.15);
+    border-color: rgba(20, 20, 20, 0);
 }
 
 .inputBox2 {
     font-family: 'Karla', sans-serif;
     width: 95%;
     height: 50px;
-    background: rgba(0, 0, 0, 0.5);
-    border-color: rgba(0, 0, 0, 0);
+    background: rgba(20, 20, 20, 0.15);
+    border-color: rgba(20, 20, 20, 0);
 }
 
 .submit {
