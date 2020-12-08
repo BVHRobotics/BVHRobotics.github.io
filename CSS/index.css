@@ -248,3 +248,12 @@ canvas {
         margin-top: 3vh;
     }
 }
+
+
+.info-content img
+{
+    width: 1204;
+    height: 677;
+    position: absolute;
+    right: 17%;
+}
