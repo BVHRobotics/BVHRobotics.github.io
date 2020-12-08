@@ -43,4 +43,4 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
-nightMode();
+// nightMode(); //Nightmode type beat
