@@ -119,6 +119,7 @@ canvas {
 
 #projects {
     top: 200vh;
+    align-items: center;
 }
 
 #contact {
