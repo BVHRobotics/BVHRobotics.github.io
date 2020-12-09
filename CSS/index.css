@@ -121,7 +121,7 @@ canvas {
 
 #projects {
     top: 200vh;
-    display: flex;
+    display: inline-flex;
 }
 
 #contact {
@@ -144,13 +144,24 @@ canvas {
 }
 
 .info-content {
+    position: absolute;
+    top: 5%;
+    left: 27%;
+    color: #0a38cf;
+    font-size: x-large;
     height: 80vh;
     width: 95vh;
     border-radius: 10px;
-    margin: auto;
     background: black;
     border: 1px solid white;
     margin-top: 3vh;
+    box-shadow: 1px black;
+}
+.info-content p
+{
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .ct1 {
@@ -250,10 +261,20 @@ canvas {
 }
 
 
-.info-content img
+#scoop
 {
-    width: 1204;
-    height: 677;
     position: absolute;
-    right: 17%;
+    top: 50px;
+    right: 5%;
+    width: 1204px;
+    height: 677px;
+}
+
+#hunter
+{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    width: 338px;
+    height: 444px;
 }
